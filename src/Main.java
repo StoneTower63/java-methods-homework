@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     //Метод к задаче 1
     public static void checkLeapYear(int year) {
@@ -11,7 +13,7 @@ public class Main {
     //--------------------------------------
     //Метод к задаче 2
     public static void suggestAppVersion(int clientOS, int clientDeviceYear) {
-        int currentYear = 2021;
+        int currentYear = LocalDate.now().getYear();
         if (clientOS == 0) {
             if (clientDeviceYear < currentYear) {
                 System.out.println("Вам нужна облегченная версия для ios");
