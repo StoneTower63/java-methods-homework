@@ -15,13 +15,13 @@ public class Main {
     public static void suggestAppVersion(int clientOS, int clientDeviceYear) {
         int currentYear = LocalDate.now().getYear();
         if (clientOS == 0) {
-            if (clientDeviceYear < currentYear) {
+            if (clientDeviceYear < 2015) {
                 System.out.println("Вам нужна облегченная версия для ios");
             } else {
                 System.out.println("Вам нужна обычная версия для ios");
             }
         } else if (clientOS == 1) {
-            if (clientDeviceYear < currentYear) {
+            if (clientDeviceYear < 2015) {
                 System.out.println("Вам нужна облегченная версия для android");
             } else {
                 System.out.println("Вам нужна обычная версия для android");
